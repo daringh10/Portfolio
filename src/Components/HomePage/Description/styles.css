@@ -1,0 +1,8 @@
+.hid_desc {
+    opacity: 0;
+  }
+  
+.sh_desc {
+opacity: 1;
+transition: opacity 6s;
+}

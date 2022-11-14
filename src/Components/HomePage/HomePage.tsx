@@ -4,7 +4,9 @@ import React from "react";
 import { Resume } from "./Resume/resume";
 
 import './homestyles.css';
-import Projects from "./NameComponent/Projects";
+
+import { Description } from "./Description/Description";
+import { ProjectText } from "../Projects/ProjectText/ProjectText";
 
 export const HomePage = () => {
       
@@ -17,13 +19,14 @@ export const HomePage = () => {
                 <hr className="mb-5"></hr>
                 <AppBar />
                 <Resume />
+                <Description />
             </section >
-            <section >
-                <Projects />
-                <div className="grid grid-rows-3 grid-flow-col gap-4 text-rose-900">
-                    <div className="row-span-3 ...">01</div>
-                    <div className="col-span-2 ...">02</div>
-                    <div className="row-span-2 col-span-2 ...">03</div>
+            <section className="grid-cols-2 text-rose-800 grid grid-rows-3 grid-flow-col gap-4 mt-1 " >
+                <div className="col-start-1 col-span-2">
+                    <ProjectText />
+                </div>
+                <div className="col-start-1">
+                    <h2>adad</h2>
                 </div>
             </section>
         </div>
