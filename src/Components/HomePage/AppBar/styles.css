@@ -11,3 +11,18 @@ a.social {
   a.youtube {
     color: #C3073F;
   }
+
+  .hid_app {
+    opacity: 0;
+  }
+  
+  .sh_app {
+    opacity: 1;
+    transition: opacity 4s;
+  }
+
+  .check {
+    opacity: 1;
+    transition: opacity 5s;
+  }
+  

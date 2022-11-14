@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+
+.hid {
+  opacity: 0;
+}
+
+.sh {
+  opacity: 1;
+  transition: opacity 2s;
+}
