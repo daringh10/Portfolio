@@ -7,7 +7,7 @@ function App() {
 
   
   return (
-    <div className='bg-black min-h-screen min-w-screen'>
+    <div className=' min-h-screen min-w-screen'>
       {/* <div className="py-24 sm:py-32 lg:py-20"> */}
         <div className="grid place-items-center">
           <HomePage/>
