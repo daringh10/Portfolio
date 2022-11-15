@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { LazyMotion, domAnimation } from "framer-motion"
 export const Description = () => {
     const { ref, inView } = useInView({
+        threshold: .8
     });
     return (
         <div className="grid place-items-center text-center">

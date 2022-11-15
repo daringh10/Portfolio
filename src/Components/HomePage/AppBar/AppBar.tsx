@@ -1,4 +1,5 @@
 import './styles.css'
+import ReactTooltip from 'react-tooltip';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useInView } from 'react-intersection-observer';
 import { faCheck, faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
@@ -41,9 +42,13 @@ export const AppBar = () => {
                         handleCopy();
                         navigator.clipboard.writeText('darin.gharib@outlook.com')
                     }}
+                    data-tip="Copy"
                     className="youtube social cursor-pointer">
+                        <ReactTooltip place="top" type="dark" effect="solid"/>
                         <FontAwesomeIcon icon={faEnvelope} size="2x" />
-                    </a> :
+                    </a>
+                    
+                     :
                     <a
                     className={"youtube social cursor-pointer transition-opacity opacity-2"}>
                        <p className='text-xs'>Copied!</p>
