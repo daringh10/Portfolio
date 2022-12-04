@@ -9,7 +9,7 @@ export const Description = () => {
     return (
         <div className="grid place-items-center text-center">
             <h3 ref={ref} className={`${inView ? 'sh_desc' : 'hid_desc'}`+
-        ' font-mono text-rose-500 mt-20 text-2xl md:text-5xl'}>Full Stack Web Developer</h3>
+        ' font-mono text-rose-700 mt-20 text-2xl md:text-5xl'}>Full Stack Web Developer</h3>
                         <motion.div
             animate={{ x: 100 }}
             transition={{ ease: "easeOut", duration: 2 }}

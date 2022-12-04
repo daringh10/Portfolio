@@ -1,5 +1,6 @@
 import './styles.css';
 import {useInView } from 'react-intersection-observer';
+import ScrollDown from './ScrollDown/ScrollDown';
 const Darin = () => {
     const { ref, inView } = useInView({
       });
@@ -9,9 +10,10 @@ const Darin = () => {
     return ( 
         <div ref={ref}  className={`${inView ? 'sh' : 'hid'}`}>
             <div className="plate">
-                <p>Darin Gharib</p>
-                <p className='text-lg mt-2 font-light text-white'>University of California Santa Cruz</p>
-                <p className='text-lg mt-1'>Graduating June 2023</p>                   
+                <ScrollDown />
+                <span className='md:text-6xl relative'>Darin Gharib</span>
+                <h5 className='text-lg mt-2 font-light text-white'>University of California Santa Cruz</h5>
+                <h5 className='text-lg mt-1'>Graduating June 2023</h5>                   
             </div>
         </div>
     );

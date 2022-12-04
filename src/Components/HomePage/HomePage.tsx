@@ -11,7 +11,7 @@ import { Projects } from "../Projects/ProjectText/ProjectLayout/ProjectLayout";
 export const HomePage = () => {
       
     return (
-        <div className="sm:text-center">
+        <div className="sm:text-center min">
             <section>
                 <div  className="font-mono text-3xl mb-3 font-bold tracking-tight text-rose-900 sm:text-4xl">
                     <Darin />
