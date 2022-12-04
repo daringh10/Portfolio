@@ -10,7 +10,7 @@
     width:300px;
     border-radius:20px;
     padding-bottom: 5px;
-    animation: border-flicker 15s linear infinite;
+    animation: border-flicker 6s linear infinite;
     padding-bottom: 10px;
     margin: 10px;
 
@@ -23,11 +23,11 @@
   font-size:15px;
   letter-spacing:10px;
   padding: 10px;
-  animation: text-flicker 20s linear infinite;
+  animation: text-flicker 7s linear infinite;
 }
 
 #offset {
-  animation: letter-flicker 17s linear infinite;
+  animation: letter-flicker 5s linear infinite;
 }
 
 @keyframes text-flicker {
