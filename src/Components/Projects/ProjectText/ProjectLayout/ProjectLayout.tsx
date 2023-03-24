@@ -4,6 +4,14 @@ export const Projects = () => {
 
     const projects: IProjectModel[] = [
         {
+            title: "Live Trivia With Websockets",
+            desc: "This project is still in alpha but you can check it out here! There is always only 1 game going on",
+            img: "https://png.pngtree.com/png-vector/20210903/ourmid/pngtree-trivia-poster-png-image_3862027.jpg",
+            projLogo: "https://cdn3.iconfinder.com/data/icons/alphabets-and-numbers/98/20-512.png",
+            date: "Feb 13 2023",
+            href: "https://trivia-app-ui.vercel.app/#"
+        },
+        {
             title: "Full Stack Email Application",
             desc: "I wanted to create something big for my first full stack project, message me if you want to check it out! For version 3 I want to drastically clean the UI. Features: Login/Authentication, Send email to users with typeahead, Move mail to folders, Favorite Emails",
             img: "https://play-lh.googleusercontent.com/D1Dz2BjPYev_oyksKXsdtAS66a_2Ql-sklpzTnwR9lqnDG_P5lAJEtfR70FudJ0XMA",
@@ -47,7 +55,7 @@ export const Projects = () => {
             <div className=" grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
                 {
                     projects.map((items, key) => (
-                        <article className=" max-w-md mx-auto mt-4 shadow-lg border-4 border-gray-800 rounded-md duration-300 hover:shadow-sm" key={key}>
+                        <article className="bg-transparent	 max-w-md mx-10 mt-4 shadow-lg  rounded-md duration-300 hover:shadow-sm" key={key}>
                             <a target={'_blank'} href={items.href}>
                                 <img  src={items.img} loading="lazy" alt={items.title}  className=" w-full h-48 rounded-t-md" />
                                 <div className="flex items-center mt-2 pt-3 ml-4 mr-2">
@@ -58,12 +66,12 @@ export const Projects = () => {
                                         <span className="block text-white font-bold text-sm">{items.date}</span>
                                     </div>
                                 </div>
-                                <div className=" bg-white p-5 mt-5 rounded-md pt-3 ml-4 mr-2 mb-3">
-                                    <h3 className="text-3xl text-gray-500 font-bold">
+                                <div className=" p-5 mt-5 rounded-md pt-3 ml-4 mr-2 mb-3">
+                                    <h3 className="text-3xl text-black-500 font-bold">
                                         {items.title}
                                     </h3>
                                     <hr className="titleLine"/>
-                                    <p className="font-bold text-black text-lg mt-1">{items.desc}</p>
+                                    <p className="font-bold text-rose-800 text-lg mt-1">{items.desc}</p>
                                 </div>
                             </a>
                         </article>

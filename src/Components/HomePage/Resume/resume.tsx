@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-const imgUrl = new URL('../../../../public/Darin Gharib Resume 2023 (14).pdf', import.meta.url).href
+const imgUrl = new URL('../../../../public/resume.pdf', import.meta.url).href
 
 
 export const Resume = () => {
